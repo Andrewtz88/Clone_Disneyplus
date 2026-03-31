@@ -1,0 +1,26 @@
+{
+  "name": "clone_disneyplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrewtz88/Clone_Disneyplus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrewtz88/Clone_Disneyplus/issues"
+  },
+  "homepage": "https://github.com/Andrewtz88/Clone_Disneyplus#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.98.0"
+  }
+}
