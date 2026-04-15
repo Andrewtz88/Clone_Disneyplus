@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Disney+</title>
+    <title>O Senhor dos Anéis</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <style>
+        /* Importando fonte com temática medieval/rúnica - Senhor dos Anéis */
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Uncial+Antiqua&display=swap');
+        
+        /* Estilo para o título do cabeçalho - Temática Senhor dos Anéis */
+        .header__title {
+            font-family: 'MedievalSharp', 'Uncial Antiqua', cursive;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin: 0;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #d4af37 0%, #f5e7a3 50%, #b8860b 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 768px) {
+            .header__title {
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header__title {
+                font-size: 0.75rem;
+                letter-spacing: 1px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <header class="header">
         <div class="header__container">
             <h1 class="header__logo">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
+                <img src="./src/images/Um.anel_animated.gif" alt="O Um Anel">
             </h1>
+            <h2 class="header__title">CLUB TOLKIEN</h2>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button">ASSINE AGORA</a>
+                    <a href="#" class="button">CADASTRE-SE</a>
                 </li>
                 <li class="header__links__item">
                     <a href="#" class="button">ENTRAR</a>
@@ -27,289 +62,276 @@
     <section class="hero">
         <div class="hero__content">
             <div class="hero__content__branding">
-                <img src="./dist/images/disneyplus.svg" alt="Disney+">
+                <img src="./src/images/Um.anel.PRINCIPAL..gif" alt="O Um Anel">
             </div>
             <h3 class="title--small">
-                As melhores histórias em um só lugar.
+                Um Anel para a todos governar, um Anel para encontrá-los,
+um Anel para a todos trazer e na escuridão aprisioná-los.
             </h3>
             <p>
-                <a href="#" class="link-text">Assinar o Disney+</a>
+                <a href="#" class="link-text">Senhor do Escuro, Sauron</a>
                 <br>
                 <span class="text">
-                    R$ 27,90/mês ou R$ 279,90/ano à vista
+                   
                 </span>
             </p>
-            <ul class="hero__content__combos">
-                <li class="hero__content__combos__combo">
-                    <img src="./src/images/logos/disney_star_plus.png" alt="Disney+ - Star Plus+ Combo+">
-                    <button>Assine Agora</button>
-                    <span class="text">R$45,90/mês* </span>
-                </li>
-                <li class="hero__content__combos__combo">
-                    <img src="./src/images/logos/disney_star_plus.png" alt="Disney+ - Star Plus+ Combo+">
-                    <button>Assine Agora</button>
-                    <span class="text">R$45,90/mês* </span>
-                </li>
-            </ul>
-            <p class="text--small">
-                O preço pode variar caso a assinatura seja feita atráves de outras plataformas.
-            </p>
+
         </div>
     </section>
 
     <section class="shows">
         <nav class="shows__tabs">
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
-                Em breve
+                Personagem Favorito dos Fãs
             </button>
             <button data-tab-button="populares" class="shows__tabs__button">
-                Mais populares
+                Seres Sombrios
             </button>
             <button data-tab-button="star_plus" class="shows__tabs__button">
-                Mais no Star+
+                Outros...
             </button>
         </nav>
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/02 - Gollum.jfif" alt="Gollum">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/03 - Gandalf.jfif" alt="Gandalf">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/04 - Legolas.png" alt="Legolas">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/05 - Gimli.jpeg" alt="Gimli">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
         </ul>
         <ul data-tab-id="populares" class="shows__list">
             <li class="shows__list__item">
-                <img src="./src/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/01 - Sauron.jfif" alt="Sauron">
             </li>
         </ul>
         <ul data-tab-id="star_plus" class="shows__list">
             <li class="shows__list__item">
-                <img src="./src/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores">
+                <img src="./src/images/em_breve/02 - Gollum.jfif" alt="Gollum">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/02 - Gollum.jfif" alt="Gollum">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/02 - Gollum.jfif" alt="Gollum">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/02 - Gollum.jfif" alt="Gollum">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/02 - Gollum.jfif" alt="Gollum">
             </li>
             <li class="shows__list__item">
-                <img src="./src/images/em_breve/spidey.jpg" alt="Spidey">
+                <img src="./src/images/em_breve/02 - Gollum.jfif" alt="Gollum">
             </li>
         </ul>
-    </section>
-
-    <section class="plans">
-        <h2 class="title--big">Escolha seu plano</h2>
-        <ul class="plans__list">
-            <li class="plans__list__item">
-                <img src="./src/images/logos/disneyplus_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 27,90/mês*</strong>
-                <p class="text--big">
-                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
-                </p>
-                <button class="button">Assine agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./src/images/logos/disney_star_plus_sm.png" alt="Disney+">
-                <strong class="title--small">R$ 45,90/mês*</strong>
-                <p class="text--big">
-                    Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
-                </p>
-                <button class="button">Assine agora</button>
-            </li>
-            <li class="plans__list__item">
-                <img src="./src/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
-                <strong class="title--small">R$ 55,90/mês*</strong>
-                <p class="text--big">
-                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
-                </p>
-                <button class="button">Assine agora</button>
-            </li>
-        </ul>
-        <p class="text--small">
-            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
-        </p>
     </section>
 
     <section class="image-text-section">
-        <img src="./src/images/tv_pc_tablet_celular.png" alt="Imagem com TV, Computador, tablet e celular">
+        <img src="./src/images/Um.anel-texto.jpg" alt="O Um Anel">
         <div class="image-text-section__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
+            <h2 class="title">O Um anel</h2>
             <p class="text--big">
-                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+                O Um Anel (de O Senhor dos Anéis) é o objeto central da história criada por J. R. R. Tolkien.
+
+Ele foi forjado pelo Senhor do Escuro Sauron com o objetivo de controlar todos os outros Anéis de Poder e dominar a Terra-média. O anel possui uma grande força mágica: ele concede poder a quem o usa, mas também corrompe lentamente a mente e o coração da pessoa.
+
+Além disso, o Um Anel torna seu portador invisível e tem vontade própria, sempre tentando voltar para Sauron.
+
+No geral, ele representa a tentação do poder absoluto e como esse poder pode destruir até mesmo pessoas boas.
             </p>
         </div>
     </section>
 
-    <section class="image-text-section image--text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
-            <img src="./src/images/fundo_rei_leao.png" alt="Rei Leão">
-        </picture>
+    <section class="image-text-section">
+        <img src="./src/images/Sauron.vilao.texto.jpg" alt="Sauron">
         <div class="image-text-section__text_container">
-            <h2 class="title">Baixe filmes e séries</h2>
+            <h2 class="title">Sauron</h2>
             <p class="text--big">
-                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
+                Sauron é o principal antagonista de O Senhor dos Anéis, obra de J. R. R. Tolkien. Ele é um ser poderoso e antigo, originalmente um espírito que acabou sendo corrompido pelo desejo de dominação.
+
+Sauron foi o criador do Um Anel, no qual colocou grande parte de seu próprio poder. Com ele, pretendia controlar os outros Anéis de Poder e governar toda a Terra-média. Após ser derrotado no passado, sua forma física foi destruída, mas seu espírito continuou existindo, mantendo sua influência e buscando recuperar o anel para voltar ao poder total.
+
+Mesmo sem um corpo, Sauron é representado como um olho flamejante que tudo vê, sempre vigilante e ameaçador. Ele simboliza o mal absoluto, a tirania e a obsessão pelo controle, sendo uma força constante de medo ao longo da história.
+            </p>
+        </div>
+    </section>
+
+    <section class="image-text-section">
+        <img src="./src/images/Gollum.texto.jpg" alt="O Um Anel">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Gollum</h2>
+            <p class="text--big">
+                Gollum, também conhecido como Sméagol, é um dos personagens mais complexos de O Senhor dos Anéis, obra de J. R. R. Tolkien.
+
+Originalmente, Sméagol era um hobbit comum, mas sua vida mudou completamente quando encontrou o Um Anel. Consumido pela obsessão, ele matou seu amigo para ficar com o objeto e, ao longo dos anos, foi sendo corrompido pelo poder do anel. Seu corpo e sua mente se transformaram, dando origem à criatura conhecida como Gollum.
+
+Ele vive em conflito interno: uma parte ainda é o antigo Sméagol, enquanto a outra é Gollum, dominada pela ganância e pelo desejo de recuperar seu “precioso” — como ele chama o anel. Essa dualidade faz dele um personagem imprevisível, às vezes ajudando, outras traindo.
+
+Gollum representa como o poder pode destruir a identidade de alguém, mostrando até onde a obsessão pode levar uma pessoa.
             </p>
         </div>
     </section>
 
     <section class="available-devices">
-        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+        <h2 class="title">Atributos e Habilidades</h2>
         <ul class="available-devices__list">
             <li class="available-devices__list__item">
-                <img src="./src/images/dispositivos/computador.png" alt="Computador">
-                <h4 class="title--small">Computador</h4>
+                <img src="./src/images/Legolas.ab.jpg" alt="Computador">
+                <h4 class="title--small">Legolas</h4>
                 <ul class="text">
-                    <li>Chrome OS</li>
-                    <li>MacOS</li>
-                    <li>PC Windows</li>
+                    <li> - Mira extremamente precisa com arco e flecha</li>
+                    <li> - Visão aguçada (enxerga a longas distâncias)</li>
+                    <li> - Reflexos e agilidade sobre-humanos</li>
+                    <li> - silencioso e leve (quase não deixa rastros)</li>
+                    <li> - Grande resistência física</li>
                 </ul>
             </li>
             <li class="available-devices__list__item">
-                <img src="./src/images/dispositivos/tv.png" alt="Computador">
-                <h4 class="title--small">TV</h4>
+                <img src="./src/images/Gimli.ab.jpg" alt="TV">
+                <h4 class="title--small">Gimli</h4>
                 <ul class="text">
-                    <li>Amazon Fire TV</li>
-                    <li>Android TV</li>
-                    <li>Apple TV</li>
-                    <li>Chromecast</li>
-                    <li>TVs LG</li>
-                    <li>Roku</li>
-                    <li>Samsung</li>
+                    <li> - Força física elevada</li>
+                    <li> - Especialista em combate corpo a corpo (machado)</li>
+                    <li> - Alta resistência e durabilidade</li>
+                    <li> - Coragem em batalhas intensas</li>
+                    <li> - Conhecimento de mineração e cavernas</li>
                 </ul>
             </li>
             <li class="available-devices__list__item">
-                <img src="./src/images/dispositivos/videogames.png" alt="Computador">
-                <h4 class="title--small">Videogames</h4>
+                <img src="./src/images/Aragorn.ab.jpg" alt="Videogames">
+                <h4 class="title--small">Aragorn</h4>
                 <ul class="text">
-                    <li>PS4</li>
-                    <li>PS5</li>
-                    <li>Xbox One</li>
-                    <li>Xbox Serix X</li>
-                    <li>Xbox Serix S</li>
+                    <li>Espadachim extremamente habilidoso</li>
+                    <li>Grande liderança (rei nato)</li>
+                    <li>Rastreamento e sobrevivência na natureza</li>
+                    <li>Resistência física e mental acima da média</li>
+                    <li>Conhecimento de cura e ervas</li>
                 </ul>
             </li>
             <li class="available-devices__list__item">
-                <img src="./src/images/dispositivos/celular.png" alt="Computador">
-                <h4 class="title--small">Celulares e tablets</h4>
+                <img src="./src/images/Ganfalf.ab.jpg" alt="Celular">
+                <h4 class="title--small">Ganfalf</h4>
                 <ul class="text">
-                    <li>Tablets Amazon Fire</li>
-                    <li>Celulares e Tablets Android</li>
-                    <li>iPhone e iPad</li>
+                    <li> - Uso de magia poderosa (luz, fogo, proteção)</li>
+                    <li> - Sabedoria e conhecimento vasto</li>
+                    <li> - Liderança e estratégia</li>
+                    <li> - Capacidade de enfrentar criaturas sobrenaturais</li>
+                    <li> - Grande influência sobre outros povos</li>
                 </ul>
             </li>
         </ul>
     </section>
 
     <section class="faq">
-        <h2 class="title">Perguntas frequentes</h2>
+        <h2 class="title">CURIOSIDADES</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    1. Por que os Anéis dos Anões não os tornaram invisíveis ou controlados por Sauron?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Diferente dos Nove Anéis dos Homens, os Sete Anéis dos Anões não foram capazes de tornar seus portadores invisíveis, nem escravizá-los diretamente à vontade de Sauron. Isso acontecia porque os anões eram naturalmente resistentes à dominação externa — possuíam uma natureza teimosa e resiliente, criada por Aulë, o ferreiro dos Valar. O efeito principal dos anéis nos anões era despertar uma obsessão desmedida por ouro e riquezas, o que muitas vezes os levava à ruína, mas não os transformava em espectros como os humanos. Sauron recuperou alguns desses anéis, mas três foram consumidos por dragões.
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    2. Por que Gandalf não usou as Águias para levar o Um Anel diretamente a Mordor?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Essa é uma das perguntas mais comuns entre os fãs! A explicação envolve vários fatores:
+
+Discrição: As águias eram criaturas grandiosas e facilmente detectáveis por Sauron, que tinha olhos em todo lugar (incluindo os temíveis Nazgûl montados em criaturas voadoras).
+
+Segurança: O Grande Olho estava atento a qualquer invasão aérea. Uma águia seria abatida por flechas orcs, lanças ou pelos próprios espectros antes de chegar à Montanha da Perdição.
+
+Vontade do Anel: Quanto mais perto de Mordor, mais pesado e sedutor o Anel se tornava. Um portador em cima de uma águia poderia facilmente sucumbir e saltar, ou dominar a criatura.
+
+Natureza das Águias: Elas não eram “táxis” a serviço de ninguém — eram seres majestosos e independentes, enviados por Manwë, e só agiam em momentos específicos de necessidade extrema.
+
+Portanto, a missão precisava ser silenciosa, a pé e com os menos poderosos possível — justamente os hobbits.
                 </div>
             </li>
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
-                    Pergunta?
+                    3. O que exatamente acontece com quem usa o Um Anel por muito tempo?
                 </div>
                 <div class="faq__questions__item__answer text--big">
-                    A resposta da pergunta
+                    Quem usa o Um Anel prolongadamente acaba desaparecendo gradualmente do mundo visível e sendo puxado para o “mundo dos espectros” — o reino da Sombra onde os Nazgûl existem. O portador se torna permanentemente invisível, mas também eternamente visível a Sauron e aos servos do Anel. Além disso, a longa exposição corrompe a mente, gerando paranoia, ganância e desejo de poder. O corpo físico definha, enquanto a vida se estende de forma antinatural — como ocorreu com Gollum (que, mesmo sendo um hobbit, viveu por mais de 500 anos). No fim, o portador se torna um espectro submisso à vontade de Sauron, assim como os Nove Reis Homens que se tornaram os Nazgûl.
                 </div>
             </li>
         </ul>
     </section>
 
-    <footer class="footer">
-        <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
-            <ul class="footer__links">
-                <li class="footer__links__item">
-                    <div class="language-selector">
-                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
-                        <select>
-                            <option>English</option>
-                            <option selected>Português</option>
-                        </select>
-                    </div>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Termos e Condições de Uso</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="" class="text--small">Política de privacidade</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Anúncios personalizados</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="" class="text--small">
-                        Dispositivos compatíveis
-                    </a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">Ajuda</a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="" class="text--small">Sobre o Disney+</a>
-                </li>
-            </ul>
-            <p class="text--small">
-                ® 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
-            </p>
-            <p class="text--small">
-                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
-            </p>
-        </div>
-    </footer>  
+<footer class="footer">
+    <div class="footer__container">
+        <img class="footer__logo" src="./src/images/Um.anel_animated.gif" alt="O Um Anel">
+        
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Sobre o Club Tolkien</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">História da Terra-média</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Personagens</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Contato</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Política de Privacidade</a>
+            </li>
+        </ul>
+
+        <p class="text--small footer__quote">
+            ✨ "Não é o forte, mas o fiel que persevera até o fim." ✨
+        </p>
+
+        <p class="text--small">
+            🌿 Este site é uma homenagem feita por um fã apaixonado à obra de <strong>J.R.R. Tolkien</strong>. 
+            Todos os direitos sobre os personagens, nomes e histórias relacionados a <strong>O Senhor dos Anéis</strong> 
+            pertencem à <strong>Tolkien Estate</strong> e à <strong>Middle-earth Enterprises</strong>. 
+            Nenhum lucro é obtido com este projeto — apenas o amor pela Terra-média. 🌿
+        </p>
+
+        <p class="text--small footer__signature">
+            🧙‍♂️ "Não chores morto, Belo Horizonte... perdoa minha saudade..." <br>
+            — Um fã que leva Tolkien no coração, desde os vales de Hobbiton até as montanhas de Mordor. 🗡️💍
+        </p>
+
+        <p class="text--small footer__copy">
+            © 2025 Club Tolkien — Projeto de fã, sem fins lucrativos. Todas as marcas são propriedade de seus respectivos donos.
+        </p>
+    </div>
+</footer>
     
     <script>
     document.addEventListener('DOMContentLoaded', function() {

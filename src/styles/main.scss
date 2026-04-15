@@ -1,7 +1,6 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
-@use 'plans';
 @use 'available-devices';
 @use 'sass:color';
 @use 'faq';
@@ -40,9 +39,9 @@
     color: variaveis.$corTextoSecundario;
 }
 
-// Estilos do body
+// Estilos do body - FUNDO PRETO
 body {
-    background-color: variaveis.$corDeFundo;
+    background-color: #000000;
 }
 
 // Classes de texto
@@ -85,7 +84,7 @@ button {
     font-size: 18px;
     font-weight: 700;
     color: variaveis.$corTextoSecundario;
-    background-color: #6421ff;
+    background-color: #d3b408;
     border: none;
     text-transform: uppercase;
     border-radius: 4px;
@@ -95,14 +94,14 @@ button {
     transition: all 0.3s ease;
     
     &:hover {
-        background-color: color.adjust(#6421ff, $lightness: -10%, $space: hsl);
+        background-color: color.adjust(#d3b408, $lightness: -10%, $space: hsl);
         transform: scale(0.98);
     }
 }
 
 .button {
     // Estilos base do botão
-    background-color: #0063e5;
+    background-color: #d3b408;
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
@@ -113,7 +112,7 @@ button {
     align-items: center;
     
     &:hover {
-        background-color: #0483ee;
+        background-color: #b89a00;
     }
 
     // Modificador secundário
@@ -128,12 +127,12 @@ button {
 
     // Modificador dark
     &--dark {
-        background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         border-color: variaveis.$corTextoSecundario;
 
         &:hover {
             background-color: variaveis.$corTextoSecundario;
-            color: variaveis.$corDeFundo;
+            color: #000000;
         }
     }
 }
@@ -144,6 +143,7 @@ button {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     position: relative;
+    background-color: #000000;
 
     img {
         max-width: 100%;
@@ -157,11 +157,12 @@ button {
         margin-bottom: 24px;
     }
 
-    // Estilo para seção com imagem de largura total (Rei Leão)
+    // Estilo para seção com imagem de largura total
     &.image--text-section--image-full-width {
         display: block;
         position: relative;
         padding: 0;
+        background-color: #000000;
         
         picture, 
         img {
@@ -184,14 +185,14 @@ button {
             h2 {
                 font-size: 3rem;
                 margin-bottom: 1.5rem;
-                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
                 text-align: left;
             }
             
             p {
                 font-size: 1.5rem;
                 line-height: 1.4;
-                text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+                text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
                 text-align: left;
             }
         }
@@ -205,9 +206,9 @@ button {
             height: 100%;
             background: linear-gradient(
                 to right,
-                rgba(0, 0, 0, 0.1) 0%,
-                rgba(0, 0, 0, 0.4) 40%,
-                rgba(0, 0, 0, 0.7) 100%
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.8) 40%,
+                rgba(0, 0, 0, 0.95) 100%
             );
             z-index: 1;
             pointer-events: none;
@@ -215,7 +216,7 @@ button {
     }
 }
 
-// Responsividade para a seção do Rei Leão
+// Responsividade
 @media (max-width: 768px) {
     .image-text-section {
         &.image--text-section--image-full-width {
@@ -256,6 +257,7 @@ button {
 
 .faq {
     padding: 5.6vw;
+    background-color: #000000;
     
     &__questions {
         list-style: none;
@@ -267,11 +269,12 @@ button {
             
             &__question {
                 padding: 1.5rem;
-                background-color: #13151f;
+                background-color: #0a0a0a;
                 cursor: pointer;
                 font-weight: bold;
                 font-size: 1.2rem;
                 position: relative;
+                color: #ffffff;
                 
                 &:after {
                     content: '+';
@@ -288,7 +291,8 @@ button {
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.3s ease-out;
-                background-color: #1a1d29;
+                background-color: #111111;
+                color: #cccccc;
             }
             
             // Estado aberto
@@ -306,12 +310,12 @@ button {
     }
 }
 
-// ========== ESTILOS DO HEADER ==========
+// ========== ESTILOS DO HEADER (FUNDO PRETO) ==========
 .header {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: variaveis.$corDeFundo;
+    background-color: #000000;
     transition: all 0.3s ease;
     z-index: 100;
     width: 100%;
